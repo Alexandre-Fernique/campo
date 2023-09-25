@@ -1,4 +1,4 @@
-import './pre-start'; // Must be the first import
+
 
 import EnvVars from '@src/constants/EnvVars';
 import server from './server';
