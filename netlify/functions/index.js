@@ -6,7 +6,7 @@
 import path from 'path';
 
 import express from 'express';
-
+import serverless from 'serverless-http';
 
 import { initializeApp, cert } from  'firebase-admin/app'
 import { getFirestore } from 'firebase-admin/firestore'
@@ -99,4 +99,4 @@ app.get('/changeurl', (_, res) => {
 
 
 // **** Export default **** //
-module.exports = app;
+export const handler = serverless(api);
