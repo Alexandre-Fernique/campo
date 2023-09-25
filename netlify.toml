@@ -3,11 +3,11 @@
   node_bundler = "esbuild"
 [[redirects]]
   force = true
-  from = "/changeurl"
-  status = 200
-  to = "/public/index.html"
-[[redirects]]
-  force = true
-  from = "/*"
+  from = "/"
   status = 200
   to = "/.netlify/functions/index/:splat"
+[[redirects]]
+force = true
+from = "/url"
+status = 200
+to = "/.netlify/functions/index/:splat"

@@ -72,7 +72,7 @@ app.get('/url', async (req, res) => {
   return res.status(200).json({url});
 });
 
-app.post('/changeurl', async (req, res) => {
+app.post('/url', async (req, res) => {
   const docRef = db.collection("campo").doc(process.env.DOCID)
   if(req.body.password === process.env.PASSWORD ) {
     await docRef.set({
