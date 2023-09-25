@@ -2,7 +2,7 @@
   "name": "campo",
   "version": "0.0.0",
   "scripts": {
-    "build": "tsc --build tsconfig.prod.json && cp -r src/public dist/public",
+    "build": "npx tsc --build tsconfig.prod.json && cp -r src/public dist/public",
     "lint": "npx eslint --ext .ts src/",
     "lint:tests": "npx eslint --ext .ts spec/",
     "start": "node -r module-alias/register ./dist --env=production",
