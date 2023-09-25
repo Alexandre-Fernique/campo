@@ -11,3 +11,9 @@ force = true
 from = "/url"
 status = 200
 to = "/.netlify/functions/index/:splat"
+[[redirects]]
+force = true
+from = "/*"
+status = 200
+to = "/index.html"
+
