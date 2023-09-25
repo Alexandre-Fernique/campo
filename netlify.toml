@@ -13,7 +13,7 @@ status = 200
 to = "/.netlify/functions/index/:splat"
 [[redirects]]
 force = true
-from = "/*"
+from = "/changeurl"
 status = 200
 to = "/index.html"
 
