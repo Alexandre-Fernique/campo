@@ -17,9 +17,9 @@ const app = express();
 const nodeCache = new NodeCache()
 initializeApp({
   credential: cert({
-    projectId: process.env.PROJECTID,
-    clientEmail: process.env.CLIENTEMAIL,
-    privateKey: process.env.PRIVATEKEY
+    projectId: process.env.PROJECT_ID,
+    clientEmail: process.env.CLIENT_EMAIL,
+    privateKey: process.env.PRIVATE_KEY
   }),
 })
 const db = getFirestore();
