@@ -12,7 +12,6 @@ import { initializeApp, cert } from  'firebase-admin/app'
 import { getFirestore } from 'firebase-admin/firestore'
 import NodeCache from "node-cache";
 // **** Variables **** //
-
 const app = express();
 const nodeCache = new NodeCache()
 initializeApp({
@@ -99,4 +98,4 @@ app.get('/changeurl', (_, res) => {
 
 
 // **** Export default **** //
-export const handler = serverless(api);
+export const handler = serverless(app);
