@@ -54,7 +54,7 @@ const getUrl = async () => {
   if (nodeCache.has("url")) {
     return nodeCache.get("url")
   }
-  const data = await db.collection("campo").doc("alpha").get()
+  const data = await db.collection("campo").doc(process.env.DOCID).get()
   const url = data.get("url")
   nodeCache.set("url",url)
   return url
